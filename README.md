@@ -20,16 +20,3 @@ This project replicates the look and feel of Netflix with smooth navigation, mob
 - **JavaScript (Vanilla JS)**  
 
 ---
-
-## 📷 Screenshots  
-(Add your project screenshots here, for example:)  
-
-![App Screenshot](./screenshots/homepage.png)  
-
----
-
-## 🚀 Getting Started  
-
-### 1️⃣ Clone the repository  
-```bash
-git clone https://github.com/your-username/netflix-clone.git
