@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url("assets/img/bg.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: black;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+nav button + button {
+    margin-left: 10px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+    max-width: 100px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    height: calc(100% - 40px);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.hero > :nth-child(1) {
+    font-weight: bolder;
+    font-size: clamp(28px, 6vw, 48px);
+    text-align: center;
+}
+
+.hero > :nth-child(2) {
+    font-weight: 400;
+    font-size: clamp(18px, 4vw, 24px);
+    text-align: center;
+}
+
+.hero > :nth-child(3) {
+    font-weight: 400;
+    font-size: clamp(16px, 3.5vw, 20px);
+    text-align: center;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(134, 131, 131);
+    z-index: 20px;
+    position: relative;
+}
+
+.btn1 {
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: red;
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn3 {
+    background-color: red;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 4px;
+    font-size: clamp(20px, 4vw, 35px);
+    border: none;
+    cursor: pointer;
+}
+
+.main input {
+    padding: 12px 24px;
+    color: white;
+    border-radius: 4px;
+    font-size: clamp(16px, 3vw, 35px);
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.secImg img {
+    width: 100%;
+    max-width: 610px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 18%;
+    left: 16%;
+    width: 68%;
+    height: auto;
+}
+
+section.first > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+}
+
+section.first > div :nth-child(1) {
+    font-size: clamp(28px, 6vw, 48px);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+section.first > div :nth-child(2) {
+    font-size: clamp(18px, 4vw, 30px);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: clamp(28px, 6vw, 48px);
+    margin-bottom: 30px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px 20px;
+}
+
+.faqbox {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 20px 30px;
+    max-width: 90vw;
+    margin: 17px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(16px, 4vw, 33px);
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+footer {
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    color: white;
+    margin: auto;
+    max-width: 90vw;
+    padding: 14px;
+    gap: 30px;
+}
+
+.f-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer questions {
+    padding: 34px 0;
+}
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    nav img {
+        width: 80px;
+    }
+    
+    .hero {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    
+    .first {
+        flex-direction: column;
+        text-align: center;
+        max-width: 95vw;
+        padding: 20px 15px;
+    }
+    
+    .secImg {
+        order: -1;
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .secImg video {
+        top: 15%;
+        left: 12%;
+        width: 76%;
+    }
+    
+    .faqbox {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .faqbox svg {
+        margin-left: 0;
+    }
+    
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        height: 50vh;
+    }
+    
+    .hero {
+        gap: 10px;
+        padding: 0 10px;
+    }
+    
+    nav {
+        padding: 10px;
+    }
+    
+    .faqbox {
+        margin: 10px auto;
+        padding: 10px 15px;
+    }
+    
+    .first {
+        padding: 15px 10px;
+        gap: 20px;
+    }
+}
+
+/* Large Screen Optimizations */
+@media screen and (min-width: 1200px) {
+    .first {
+        max-width: 1200px;
+    }
+    
+    .footer {
+        max-width: 1200px;
+    }
+    
+    .faqbox {
+        max-width: 1000px;
+    }
+}
